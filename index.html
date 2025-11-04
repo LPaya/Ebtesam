@@ -10,6 +10,16 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5FG9BKK74"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q5FG9BKK74');
+</script>
+
 </head>
 <body>
     <div class="hero-wrapper">
@@ -20,7 +30,7 @@
 
         <main>
             <h1 class="hero-h1">تصميم فيديوهات الكترونية لجميع مناسباتكم</h1>
-            <a href="" id="CTA" class="CTA">صمم الآن</a>
+            <a href="https://www.instagram.com/direct/t/17851009517974592/" id="CTA" class="CTA">صمم الآن</a>
         </main>
     </div>
 
@@ -110,7 +120,7 @@
 </div>    
 
     <footer>
-        <a href=""><img src="images/icons8-insta-100 (1).png" alt="" class="insta"></a>
+        <a href="https://www.instagram.com/designer_ebtesam/"><img src="images/icons8-insta-100 (1).png" alt="" class="insta"></a>
         <h5>&copy;Designer_Ebtesam</h5>
     </footer>
 
@@ -130,5 +140,21 @@
   });
 </script>
 
+    <script>
+    window.addEventListener("DOMContentLoaded", function() {
+      document.querySelectorAll(".CTA").forEach(function(element) {
+        element.addEventListener("click", function() {
+          console.log("CTA pressed ✅"); // للتأكد في الـ Console
+          gtag('event', 'cta_click', {
+            'event_category': 'engagement',
+            'event_label': element.innerText,
+            'value': 1
+          });
+        });
+      });
+    });
+  </script>
+
 </body>
+
 </html>
