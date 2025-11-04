@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer_Ebtesam</title>
+
+    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+</head>
+<body>
+    <div class="hero-wrapper">
+        <header>
+            <p class="name">Designer_Ebtesam</p>
+            <img src="images/logo.jpg" alt="logo" class="logo">
+        </header>
+
+        <main>
+            <h1 class="hero-h1">تصميم فيديوهات الكترونية لجميع مناسباتكم</h1>
+            <a href="" id="CTA" class="CTA">صمم الآن</a>
+        </main>
+    </div>
+
+    <div class="features">
+        <ul>
+            <li>تصاميم مخصصة حسب ذوقك</li>
+            <li>سرعة في التنفيذ والتسليم</li>
+            <li id="border">جودة فيديو عالية وملائمة لكل المنصات</li>
+        </ul>
+    </div>
+
+    <div class="portiflo">
+        <div class="box1 box-1">
+            <video src="images/1.mp4" muted autoplay loop></video>
+            <p class="portiflo-p">دعوة حفل تكريم</p>
+        </div>
+
+        <div class="box1 box-2">
+            <img src="images/small1.jpg" alt="">
+            <p class="portiflo-p">دعوة حفل زفاف بصرية</p>
+        </div>
+
+        <div class="box1 box-3">
+            <video src="images/2.mp4" muted autoplay loop></video>
+            <p class="portiflo-p">اعلان متجر</p>
+        </div>
+
+        <div class="box1 box-4">
+            <img src="images/small2.jpg" alt="">
+            <p class="portiflo-p">دعوة حفل زفاف بصرية</p>
+        </div>
+
+        <div class="box1 box-5">
+            <video src="images/3.mp4" muted autoplay loop></video>
+            <p class="portiflo-p">دعوة حفل زفاف</p>
+        </div>
+    </div>
+
+         <h3 class="top">التقييمات</h3>
+
+<div class="reviews-section">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide box">
+        <img src="images/icons8-person-100.png" alt="">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>عنجد الشغل طالع بجنن، التفاصيل ناعمة والفيديو مرتب بطريقة بتفتح النفس، شكراً كتير إلك.</p>
+      </div>
+
+      <div class="swiper-slide box">
+        <img src="images/icons8-person-100.png" alt="">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>طلبت منها فيديو دعوة لخطوبتي وطلع أحلى من اللي كنت متخيلته، سريعة بالشغل وبتفهم الزبون عالطاير.</p>
+      </div>
+
+      <div class="swiper-slide box">
+        <img src="images/icons8-person-100.png" alt="">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>التعامل راقي وشغلها نظيف ومرتب، حسيت بالاهتمام بكل تفصيل صغيرة، أكيد مو آخر مرة بطلب منها.</p>
+      </div>
+
+      <div class="swiper-slide box">
+        <img src="images/icons8-person-100.png" alt="">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>عنجد بتستاهل كل كلمة شكر، الفيديو كان فخم بطريقة بسيطة، حسيت كأنه معمول خصيصاً إلي.</p>
+      </div>
+
+    </div>
+  </div>
+</div>    
+
+    <footer>
+        <a href=""><img src="images/icons8-insta-100 (1).png" alt="" class="insta"></a>
+        <h5>&copy;Designer_Ebtesam</h5>
+    </footer>
+
+     <!-- سكربت Swiper -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: { delay: 3000 },
+    pagination: { el: ".swiper-pagination", clickable: true },
+    breakpoints: {
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 }
+    }
+  });
+</script>
+
+</body>
+</html>
